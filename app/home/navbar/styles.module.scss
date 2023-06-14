@@ -1,0 +1,40 @@
+@import "../../../styles//variables";
+@import "../../../styles//screensize";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+
+  .inner_container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    .logo {
+      color: #fff;
+      a {
+        color: $secondaryColor;
+        font-weight: 900;
+      }
+    }
+    .links {
+      display: flex;
+      p {
+        padding: 10px 20px;
+        font-size: large;
+        &:hover {
+          // background-color: #4a4444;
+          border-bottom: 2px solid $primaryColor;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

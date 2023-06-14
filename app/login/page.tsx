@@ -1,5 +1,6 @@
 import React from "react";
+import LoginComps from "./form";
 
 export default function LoginPage() {
-  return <div>LoginPage</div>;
+  return <LoginComps />;
 }

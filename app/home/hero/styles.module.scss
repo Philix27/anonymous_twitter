@@ -1,0 +1,61 @@
+@import "../../../styles//variables";
+@import "../../../styles//screensize";
+
+.container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .inner_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: rgb(228, 188, 135);
+    width: 80%;
+    height: 100%;
+    .image {
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      // justify-content: left;
+      // background-color: rgb(228, 188, 135);
+      img {
+        height: 500px;
+      }
+    }
+    .text_content {
+      //   background-color: antiquewhite;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 50px;
+      h1 {
+        font-size: 50px;
+        padding-bottom: 40px;
+      }
+      p {
+        font-size: 30px;
+        font-weight: 100;
+        padding-bottom: 40px;
+      }
+      .link {
+        padding-bottom: 40px;
+        input {
+          padding: 15px 35px;
+          border-style: none;
+          border-radius: 5px;
+          background-color: $primaryColor;
+          color: #fff;
+          &:hover {
+            color: #fff;
+            background-color: $background1;
+            border: 2px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}
