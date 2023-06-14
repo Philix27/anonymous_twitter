@@ -13,16 +13,16 @@ export default function HomeNavbar() {
         </div>
         <div className={styles.links}>
           <p>
-            <Link href={"/login"}>Features</Link>
+            <Link href={"#objectives"}>Features</Link>
           </p>
           <p>
             <Link href={"/signup"}>About</Link>
           </p>
-          <p>
+          {/* <p>
             <Link href={"/login"}>Login</Link>
-          </p>
+          </p> */}
           <p>
-            <Link href={"/signup"}>Sign up</Link>
+            <Link href={"/login"}>Sign in</Link>
           </p>
         </div>
       </div>

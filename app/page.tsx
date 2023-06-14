@@ -11,9 +11,9 @@ export default function Home() {
     <main>
       <HomeNavbar />
       <HeroSection />
-      <HomeIntegration />
       <HomeObjectives />
-      <HomeAbout />
+      <HomeIntegration />
+      {/* <HomeAbout /> */}
       {/* <HomeElaborate /> */}
       {/* <HomeElaborate /> */}
       <HomeFooter />
