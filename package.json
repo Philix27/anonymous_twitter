@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@celo/react-celo": "^5.0.3",
+    "@masa-finance/masa-react": "^2.4.7",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
