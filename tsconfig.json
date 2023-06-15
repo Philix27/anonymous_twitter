@@ -14,6 +14,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    // "target": "es2020",
+    // "module": "commonjs",
     "plugins": [
       {
         "name": "next"
