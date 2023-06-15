@@ -1,4 +1,4 @@
-import prismaClient from "@/app/prisma/client";
+import prismaClient from "@/src/prisma/client";
 import NextAuth from "next-auth/next";
 import GoogleProvider from "next-auth/providers/google";
 import Github from "next-auth/providers/github";
@@ -11,6 +11,14 @@ export const authOptions: AuthOptions = {
   secret: process.env.SECRET,
   session: { strategy: "jwt" },
   debug: process.env.NODE_ENV === "development",
+  callbacks: {
+    async jwt({ token, profile, account }) {
+      if (profile) {
+        token.name = profile.name;
+      }
+      return token;
+    },
+  },
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID as string,

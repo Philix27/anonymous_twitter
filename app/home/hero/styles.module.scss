@@ -3,7 +3,7 @@
 
 .container {
   width: 100%;
-  height: calc(100vh - 50px);
+  min-height: calc(100vh);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,17 +11,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // background-color: rgb(228, 188, 135);
     width: 80%;
     height: 100%;
+    padding-top: 50px;
+    @include mobileSS {
+      padding-top: 0px;
+      width: 90%;
+      flex-direction: column;
+    }
     .image {
       width: 50%;
       display: flex;
       align-items: flex-start;
-      // justify-content: left;
-      // background-color: rgb(228, 188, 135);
+      @include mobileSS {
+        width: 70%;
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
       img {
         height: 500px;
+        @include mobileSS {
+          height: 400px;
+        }
       }
     }
     .text_content {
@@ -32,6 +45,9 @@
       flex-direction: column;
       justify-content: center;
       padding-bottom: 50px;
+      @include mobileSS {
+        width: 90%;
+      }
       h1 {
         font-size: 50px;
         padding-bottom: 40px;
