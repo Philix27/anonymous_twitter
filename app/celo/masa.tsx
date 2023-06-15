@@ -6,27 +6,27 @@ import { publicProvider } from "wagmi/providers/public";
 import { Masa as MasaSdk } from "@masa-finance/masa-sdk";
 import { providers, Wallet, ethers } from "ethers";
 
-const provider = new providers.Web3Provider(window.ethereum);
-const signer = provider.getSigner();
-const wallet = "";
+// const provider = new providers.Web3Provider(window.ethereum);
+// const signer = provider.getSigner();
+// const wallet = "";
 
-export const masa = new MasaSdk({
-  signer,
-  networkName: "goerli",
-});
-new MasaSdk({
-  cookie: "masa cookie",
-  // wallet,
-  apiUrl: "https://middleware.masa.finance",
-  environment: "production",
-  // network: "goerli",
-  arweave: {
-    host: "arweave.net",
-    port: 443,
-    protocol: "https",
-    logging: false,
-  },
-});
+// export const masa = new MasaSdk({
+//   signer,
+//   networkName: "goerli",
+// });
+// // new MasaSdk({
+//   cookie: "masa cookie",
+//   // wallet,
+//   apiUrl: "https://middleware.masa.finance",
+//   environment: "production",
+//   // network: "goerli",
+//   arweave: {
+//     host: "arweave.net",
+//     port: 443,
+//     protocol: "https",
+//     logging: false,
+//   },
+// });
 
 const { publicClient, webSocketPublicClient } = configureChains(
   [mainnet],
