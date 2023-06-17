@@ -14,8 +14,21 @@ export default function Home() {
       <HomeObjectives />
       <HomeIntegration />
       {/* <HomeAbout /> */}
-      {/* <HomeElaborate /> */}
-      {/* <HomeElaborate /> */}
+      <HomeElaborate
+        title={"Privacy"}
+        subtitle={
+          "Anonymity would allow users to express themselves without fear of personal repercussions or judgment based on their identity."
+        }
+        img_url={"./images/world.png"}
+      />
+      <HomeElaborate
+        title={"Privacy"}
+        subtitle={
+          "Anonymity would allow users to express themselves without fear of personal repercussions or judgment based on their identity."
+        }
+        img_url={"./images/block.png"}
+      />
+
       <HomeFooter />
     </main>
   );

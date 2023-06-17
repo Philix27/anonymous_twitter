@@ -25,27 +25,12 @@ export default function HomeObjectives() {
         {cardItems({
           title: "Hello",
           subtitle: "Some stories from gpt",
-          icon: <AiOutlineWeiboCircle />,
-        })}
-        {cardItems({
-          title: "Hello",
-          subtitle: "Some stories from gpt",
-          icon: <AiFillLock />,
-        })}
-        {cardItems({
-          title: "Hello",
-          subtitle: "Some stories from gpt",
           icon: <AiFillSecurityScan />,
         })}
         {cardItems({
           title: "Hello",
           subtitle: "Some stories from gpt",
-          icon: <AiFillProfile />,
-        })}
-        {cardItems({
-          title: "Hello",
-          subtitle: "Some stories from gpt",
-          icon: <FaUser />,
+          icon: <AiFillLock />,
         })}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { Button } from "@/app/comp/button/button";
 
 interface IProps {
   image_url: string;
@@ -15,9 +16,7 @@ export default function HeroSection() {
         <div className={styles.text_content}>
           <h1>Unwind</h1>
           <p>Unwind your opinions about the world and let nothings stop you.</p>
-          <div className={styles.link}>
-            <input type="button" value="Join the free speakers" />
-          </div>
+          {<Button />}
         </div>
       </div>
     </section>

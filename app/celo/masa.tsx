@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import React, { useCallback } from "react";
 import { MasaProvider, useMasa } from "@masa-finance/masa-react";
+// import "@masa-finance/masa-react/dist/style.css";
 import { WagmiConfig, createConfig, configureChains, mainnet } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 import { Masa as MasaSdk } from "@masa-finance/masa-sdk";
@@ -39,7 +40,20 @@ const config = createConfig({
 });
 
 const address = "0x7054b457f55dc0D47725bdeeB98eddE543eC448D";
+
 export default function MasaComp() {
+  const { connect } = useMasa();
+
+  // const connectionCallback = () => {
+  //   history.push("/dashboard");
+  // };
+
+  // const connectionHandler = useCallback(() => {
+  //   const you = connect({ scope: {}, callback: () => {} });
+  // }, [connect]);
+
+  //! Another Section
+
   const _provider = new ethers.providers.EtherscanProvider(address);
   console.log(_provider, "a provider");
   const apiKey = _provider.apiKey;
