@@ -2,20 +2,19 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { ListOfPosts } from "./post_list";
 import { BiComment } from "react-icons/bi";
+import HomeWrapper from "../comps/wrapper";
 
 export default function NewsPosts() {
   return (
-    <div className={styles.container}>
-      <div className={styles.inner_container}>
-        {...ListOfPosts}
-        {PostCard({
-          title: "How are you",
-          note: "Some contents",
-          username: "Phil Jones",
-          time: "21-July-2023",
-        })}
-      </div>
-    </div>
+    <HomeWrapper>
+      {...ListOfPosts}
+      {PostCard({
+        title: "How are you",
+        note: "Some contents",
+        username: "Phil Jones",
+        time: "21-July-2023",
+      })}
+    </HomeWrapper>
   );
 }
 

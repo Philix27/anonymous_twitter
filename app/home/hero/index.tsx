@@ -11,7 +11,7 @@ export default function HeroSection() {
     <section className={styles.container}>
       <div className={styles.inner_container}>
         <div className={styles.image}>
-          <img src="./images/world.png" alt="hero_img" />
+          <img src="./images/secure.png" alt="hero_img" />
         </div>
         <div className={styles.text_content}>
           <h1>Unwind</h1>

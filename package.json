@@ -20,7 +20,7 @@
     "@prisma/client": "4.11.0",
     "add": "^2.0.6",
     "blind-threshold-bls": "https://github.com/celo-org/blind-threshold-bls-wasm#3d1013af",
-    "ethers": "^5.7.2",
+    "ethers": "^5.7.1",
     "framer-motion": "^10.12.16",
     "next": "13.4.5",
     "next-auth": "^4.22.1",

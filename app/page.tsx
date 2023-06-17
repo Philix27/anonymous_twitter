@@ -12,7 +12,6 @@ export default function Home() {
       <HomeNavbar />
       <HeroSection />
       <HomeObjectives />
-      <HomeIntegration />
       {/* <HomeAbout /> */}
       <HomeElaborate
         title={"Privacy"}
@@ -22,13 +21,21 @@ export default function Home() {
         img_url={"./images/world.png"}
       />
       <HomeElaborate
-        title={"Privacy"}
+        title={"Security"}
         subtitle={
-          "Anonymity would allow users to express themselves without fear of personal repercussions or judgment based on their identity."
+          "Your statements are saved on a decentralized platform where your thoughts and opinions cannot be altered or brought down by any system"
         }
         img_url={"./images/block.png"}
       />
 
+      <HomeElaborate
+        title={"Freedom of Speech"}
+        subtitle={
+          "People might feel more comfortable sharing diverse opinions and engaging in open discussions if their identities were protected."
+        }
+        img_url={"./images/secure_chat.png"}
+      />
+      <HomeIntegration />
       <HomeFooter />
     </main>
   );
