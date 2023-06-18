@@ -5,14 +5,19 @@ import styles from "./styles.module.scss";
 import { BiMenu, BiWindowClose } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Views } from "..";
+import { useAccount, useDisconnect } from "wagmi";
+import { useRouter } from "next/router";
 
 interface IData {
   activeScreen: Views;
   setActiveScreen: React.Dispatch<React.SetStateAction<Views>>;
 }
 export default function NewsNavbar(props: IData) {
+  const router = useRouter();
   const { setActiveScreen, activeScreen } = props;
   const [showModal, setShowModal] = useState(false);
+  const { address, isConnected } = useAccount();
+  const { disconnect } = useDisconnect();
 
   return (
     <div className={styles.container}>
@@ -42,9 +47,15 @@ export default function NewsNavbar(props: IData) {
             <p>Groups</p>
           </div>
         </div>
-        <div className={styles.links}>
+        <div
+          className={styles.links}
+          onClick={() => {
+            disconnect();
+            router.push("/");
+          }}
+        >
           <p>
-            <Link href={"/login"}>Username</Link>
+            <Link href={"/"}>Logout</Link>
           </p>
         </div>
       </div>

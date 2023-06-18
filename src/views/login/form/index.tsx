@@ -19,6 +19,10 @@ export default function LoginComps() {
     connector: new InjectedConnector(),
   });
 
+  if (isConnected) {
+    router.push("/news");
+  }
+
   return (
     <section className={styles.container}>
       <div className={styles.inner_container}>

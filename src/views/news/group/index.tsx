@@ -8,8 +8,9 @@ export default function GroupView() {
         Groups
         <div>
           <ul>
-            <li>Tech Bros</li>
+            {/* <li>Tech Bros</li> */}
             <li>Celo</li>
+            <li>Masa</li>
           </ul>
         </div>
       </div>
