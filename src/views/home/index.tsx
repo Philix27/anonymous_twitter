@@ -1,12 +1,12 @@
-import HomeAbout from "./home/about";
-import HomeElaborate from "./home/elaborate";
-import HomeFooter from "./home/footer";
-import HeroSection from "./home/hero";
-import HomeIntegration from "./home/integration";
-import HomeNavbar from "./home/navbar";
-import HomeObjectives from "./home/objectives";
+import HomeAbout from "./about";
+import HomeElaborate from "./elaborate";
+import HomeFooter from "./footer";
+import HeroSection from "./hero";
+import HomeIntegration from "./integration";
+import HomeNavbar from "./navbar";
+import HomeObjectives from "./objectives";
 
-export default function Home() {
+export default function HomeView() {
   return (
     <main>
       <HomeNavbar />

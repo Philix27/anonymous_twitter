@@ -38,7 +38,7 @@ export default function HomeNavbar() {
             <Link href={"/login"}>Login</Link>
           </p> */}
           <p onClick={() => setShowModal(false)}>
-            <Link href={"/login"}>Sign in</Link>
+            <Link href={"/signin"}>Sign in</Link>
           </p>
         </div>
       </div>

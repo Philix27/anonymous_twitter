@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { Button } from "@/app/comp/button/button";
+import { Button } from "../../comp/button/button";
 
 interface IProps {
   image_url: string;

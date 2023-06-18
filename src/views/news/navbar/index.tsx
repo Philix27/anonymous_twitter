@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { BiMenu, BiWindowClose } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Views } from "../page";
+import { Views } from "..";
 
 interface IData {
   activeScreen: Views;

@@ -8,7 +8,7 @@ import GroupView from "./group";
 
 export type Views = "Home" | "Groups" | "Profile";
 
-export default function NewsPage() {
+export default function NewsView() {
   const [activeScreen, setActiveScreen] = useState<Views>("Home");
   return (
     <>

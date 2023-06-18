@@ -1,7 +1,7 @@
 "use client";
 import { Inter } from "next/font/google";
 import "../styles/index.scss";
-import AuthProvider from "../src/context/authContext";
+import AuthProvider from "../context/authContext";
 import { MasaProvider } from "@masa-finance/masa-react";
 const inter = Inter({ subsets: ["latin"] });
 import { WagmiConfig, createConfig, mainnet } from "wagmi";
