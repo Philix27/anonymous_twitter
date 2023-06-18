@@ -9,6 +9,7 @@ import {
   AiOutlineHome,
   AiOutlineWeiboCircle,
 } from "react-icons/ai";
+import { HiUserGroup } from "react-icons/hi";
 import { BiGroup } from "react-icons/bi";
 import { FaUser } from "react-icons/fa";
 
@@ -18,9 +19,9 @@ export default function HomeObjectives() {
     <div className={styles.container} id="objectives">
       <div className={styles.inner_container}>
         {cardItems({
-          title: "Hello",
-          subtitle: "Communicate freely",
-          icon: <AiFillPhone />,
+          title: "Forums",
+          subtitle: "Chat with others who with similar interest",
+          icon: <HiUserGroup />,
         })}
         {cardItems({
           title: "Security",
