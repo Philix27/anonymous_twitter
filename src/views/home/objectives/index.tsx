@@ -19,17 +19,17 @@ export default function HomeObjectives() {
       <div className={styles.inner_container}>
         {cardItems({
           title: "Hello",
-          subtitle: "Some stories from gpt",
+          subtitle: "Communicate freely",
           icon: <AiFillPhone />,
         })}
         {cardItems({
-          title: "Hello",
-          subtitle: "Some stories from gpt",
+          title: "Security",
+          subtitle: "All posts are completely secure.",
           icon: <AiFillSecurityScan />,
         })}
         {cardItems({
-          title: "Hello",
-          subtitle: "Some stories from gpt",
+          title: "Anonymity",
+          subtitle: "You have the option of being completely anonymous",
           icon: <AiFillLock />,
         })}
       </div>
