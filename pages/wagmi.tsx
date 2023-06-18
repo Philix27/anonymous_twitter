@@ -1,4 +1,4 @@
-import { AppMasa } from "@/src/lib";
+// import { AppMasa } from "@/src/lib";
 import React from "react";
 import {
   useAccount,
@@ -16,9 +16,9 @@ export default function Home() {
   const { data } = useBalance({ address: address });
   const { data: ensData } = useEnsName({ address: address });
 
-  AppMasa.account.getBalances(address).then((e) => {
-    console.log("AppMasa", e);
-  });
+  // AppMasa.account.getBalances(address).then((e) => {
+  //   console.log("AppMasa", e);
+  // });
 
   const { connect } = useConnect({
     connector: new InjectedConnector(),

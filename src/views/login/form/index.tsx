@@ -4,17 +4,21 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.scss";
-import {
-  AiFillTwitterSquare,
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillFacebook,
-  AiFillHome,
-} from "react-icons/ai";
+import { AiFillHome } from "react-icons/ai";
+import { useAccount, useConnect, useDisconnect } from "wagmi";
+import { InjectedConnector } from "wagmi/connectors/injected";
+import { BiLogIn } from "react-icons/bi";
+import Loading from "@/src/comp/loading/loading";
 
 export default function LoginComps() {
   const router = useRouter();
+  const { address, isConnected } = useAccount();
+  const { disconnect } = useDisconnect();
+
+  const { connect, isLoading } = useConnect({
+    connector: new InjectedConnector(),
+  });
+
   return (
     <section className={styles.container}>
       <div className={styles.inner_container}>
@@ -34,18 +38,18 @@ export default function LoginComps() {
             </div>
             <h1>Sign in with any of these social media providers.</h1>
           </div>
-          <div className={styles.links}>
-            <p>Twitter</p>
-            <AiFillTwitterSquare />
-          </div>
-          <div className={styles.links}>
-            <p>Instagram</p>
-            <AiFillInstagram />
-          </div>
-          <div className={styles.links}>
-            <p>Facebook</p>
-            <AiFillFacebook />
-          </div>
+          {isLoading && <Loading />}
+          {isConnected ? (
+            <div className={styles.links} onClick={() => disconnect()}>
+              <p>Logout</p>
+              <BiLogIn />
+            </div>
+          ) : (
+            <div className={styles.links} onClick={() => connect()}>
+              <p>Login</p>
+              <BiLogIn />
+            </div>
+          )}
         </div>
       </div>
     </section>
