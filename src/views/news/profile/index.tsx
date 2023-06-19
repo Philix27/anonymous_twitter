@@ -17,6 +17,10 @@ export default function ProfileView() {
           <p>Balance</p>
           <p>{data?.formatted}</p>
         </div>
+        <div>
+          <p>Minted SBT</p>
+          <p></p>
+        </div>
       </div>
     </HomeWrapper>
   );
