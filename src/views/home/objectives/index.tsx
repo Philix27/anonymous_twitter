@@ -1,17 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import {
-  AiFillLock,
-  AiFillPhone,
-  AiFillProfile,
-  AiFillSecurityScan,
-  AiOutlineDotChart,
-  AiOutlineHome,
-  AiOutlineWeiboCircle,
-} from "react-icons/ai";
+import { AiFillLock, AiFillSecurityScan } from "react-icons/ai";
 import { HiUserGroup } from "react-icons/hi";
-import { BiGroup } from "react-icons/bi";
-import { FaUser } from "react-icons/fa";
 
 export default function HomeObjectives() {
   //TODO - 6 Different objectives

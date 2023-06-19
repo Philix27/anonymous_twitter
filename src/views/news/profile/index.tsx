@@ -1,5 +1,6 @@
 import React from "react";
 import HomeWrapper from "../comps/wrapper";
+import styles from "./styles.module.scss";
 import { useAccount, useBalance } from "wagmi";
 
 export default function ProfileView() {
@@ -7,9 +8,16 @@ export default function ProfileView() {
   const { data } = useBalance({ address: address });
   return (
     <HomeWrapper>
-      <div>ProfilePage</div>
-      <p>Address: {address}</p>
-      <p>Balance: {data?.formatted}</p>
+      <div className={styles.box}>
+        <div>
+          <p>Address</p>
+          <p>{address}</p>
+        </div>
+        <div>
+          <p>Balance</p>
+          <p>{data?.formatted}</p>
+        </div>
+      </div>
     </HomeWrapper>
   );
 }
