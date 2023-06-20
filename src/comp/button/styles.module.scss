@@ -8,11 +8,12 @@
     border-style: none;
     border-radius: 5px;
     background-color: $primaryColor;
+    border: 1px solid $primaryColor;
     color: #fff;
     &:hover {
       color: #fff;
       background-color: $background1;
-      border: 2px solid #fff;
+      border: 1px solid #fff;
     }
   }
 }

@@ -3,18 +3,21 @@ import styles from "./styles.module.scss";
 import { ListOfPosts } from "./post_list";
 import { BiComment } from "react-icons/bi";
 import HomeWrapper from "../comps/wrapper";
+import NewTweet from "../new_post";
 
 export default function NewsPosts() {
+  // return <HomeWrapper>{...ListOfPosts}</HomeWrapper>;
   return (
-    <HomeWrapper>
-      {...ListOfPosts}
-      {PostCard({
-        title: "How are you",
-        note: "Some contents",
-        username: "Phil Jones",
-        time: "21-July-2023",
-      })}
-    </HomeWrapper>
+    <div className={styles.container}>
+      <div className={styles.inner_container}>
+        <div className={styles.sidebar1_container}></div>
+        <div className={styles.feed_container}>
+          <NewTweet />
+          {...ListOfPosts}
+        </div>
+        <div className={styles.sidebar2_container}></div>
+      </div>
+    </div>
   );
 }
 

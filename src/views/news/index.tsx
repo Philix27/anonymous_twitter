@@ -5,6 +5,8 @@ import NewsPosts from "./feed";
 import NewsNavbar from "./navbar";
 import ProfileView from "./profile";
 import GroupView from "./group";
+import NewsFab from "./fab";
+import NewsBottomSheet from "./bottom";
 
 export type Views = "Home" | "Groups" | "Profile";
 
@@ -16,6 +18,8 @@ export default function NewsView() {
         setActiveScreen={setActiveScreen}
         activeScreen={activeScreen}
       />
+      {/* <NewsFab /> */}
+      <NewsBottomSheet />
       {getActiveScreen(activeScreen)}
     </>
   );
